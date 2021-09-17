@@ -146,7 +146,7 @@ class BaseBertEstimator(BaseEstimator):
     ignore_label : list of strings
         Labels to be ignored when calculating f1 for token classifiers
     """
-    def __init__(self, bert_model='bert-base-uncased',
+    def __init__(self, bert_model='bert-base-multilingual-uncased',
                  bert_config_json=None, bert_vocab=None,
                  from_tf=False, do_lower_case=None, label_list=None,
                  num_mlp_hiddens=500, num_mlp_layers=0, restore_file=None,
